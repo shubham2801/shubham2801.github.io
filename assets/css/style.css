@@ -20,6 +20,7 @@ body {
     font-family: 'ambleregular';
     font-weight: 300;
 }
+a.phone { font-family: 'ambleregular'; color: white; text-transform: none;   }
 
 img {
     -moz-user-select: none;
@@ -252,10 +253,13 @@ ul{
 .heading {
     margin-bottom: 4rem;
 }
+.appointment_footer{   
+    padding-top: 10rem;
+}
 .overlay {
     /*background-color: rgba(0, 0, 0, 0.3);*/
     width: 100%;
-    height: 750px;
+    height:auto;
 }
 .creativity_overlay {
     background-color: rgba(0, 0, 0, 0.55);
@@ -525,7 +529,7 @@ h1 span {
 }
 
 .home .main_home{
-    padding-top: 250px;
+    padding-top: 10rem;
 }
 
 .home .main_home h1{
