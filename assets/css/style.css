@@ -21,6 +21,56 @@ body {
     font-weight: 300;
 }
 a.phone { font-family: 'ambleregular'; color: white; text-transform: none;   }
+.all_overlay{
+    background: rgba(219, 116, 117, 0.75); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(219, 116, 117, 0.6) 0%,
+        rgba(220, 132, 118, 0.75) 24%,
+        rgba(224, 150, 121, 0.75) 42%,
+        rgba(222, 151, 119, 0.75) 42%,
+        rgba(221, 155, 120, 0.75) 45%,
+        rgba(225, 167, 121, 0.75) 55%,
+        rgba(222, 168, 121, 0.75) 57%,
+        rgba(225, 171, 124, 0.75) 61%,
+        rgba(224, 173, 120, 0.75) 62%,
+        rgba(225, 180, 125, 0.75) 68%,
+        rgba(226, 181, 122, 0.75) 70%,
+        rgba(224, 189, 125, 0.75) 77%,
+        rgba(227, 189, 124, 0.75) 79%,
+        rgba(225, 195, 123, 0.75) 84%,
+        rgba(228, 205, 125, 0.75) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(219, 116, 117, 0.6) 0%,
+        rgba(220, 132, 118, 0.75) 24%,
+        rgba(224, 150, 121, 0.75) 42%,
+        rgba(222, 151, 119, 0.75) 42%,
+        rgba(221, 155, 120, 0.75) 45%,
+        rgba(225, 167, 121, 0.75) 55%,
+        rgba(222, 168, 121, 0.75) 57%,
+        rgba(225, 171, 124, 0.75) 61%,
+        rgba(224, 173, 120, 0.75) 62%,
+        rgba(225, 180, 125, 0.75) 68%,
+        rgba(226, 181, 122, 0.75) 70%,
+        rgba(224, 189, 125, 0.75) 77%,
+        rgba(227, 189, 124, 0.75) 79%,
+        rgba(225, 195, 123, 0.75) 84%,
+        rgba(228, 205, 125, 0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(219, 116, 117, 0.6) 0%,
+        rgba(220, 132, 118, 0.75) 24%,
+        rgba(224, 150, 121, 0.75) 42%,
+        rgba(222, 151, 119, 0.75) 42%,
+        rgba(221, 155, 120, 0.75) 45%,
+        rgba(225, 167, 121, 0.75) 55%,
+        rgba(222, 168, 121, 0.75) 57%,
+        rgba(225, 171, 124, 0.75) 61%,
+        rgba(224, 173, 120, 0.75) 62%,
+        rgba(225, 180, 125, 0.75) 68%,
+        rgba(226, 181, 122, 0.75) 70%,
+        rgba(224, 189, 125, 0.75) 77%,
+        rgba(227, 189, 124, 0.75) 79%,
+        rgba(225, 195, 123, 0.75) 84%,
+        rgba(228, 205, 125, 0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db7475', endColorstr='#e4cd7d',GradientType=0 ); /* IE6-9 */
+
+}
 
 img {
     -moz-user-select: none;
