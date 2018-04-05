@@ -125,8 +125,8 @@
                             <ul>                                         
                                 <li id="li_service" class="filter" data-filter=".services">Services</li>
                                 <li id="li_clinic" class="filter" data-filter=".clinic">Our Clinic</li>
-                                <li class="filter" data-filter=".cat2">Education</li>
-                                <li class="filter" data-filter=".cat3">Before and After</li>
+                                <li id="li_education" class="filter" data-filter=".education">Education</li>
+                                <li id="li_before_and_after" class="filter" data-filter=".before_and_after">Before and After</li>
                             </ul>
                         </div>
                         <div id="mixcontent" class="mixcontent">
@@ -262,8 +262,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                                                                                                    
+                            </div>
 
+                            <div  class="mix before_and_after">
+                                <div id="img_before_and_after">
+                                    <img src="assets/images/coming_soon.png" alt="" />
+                                </div>
+                            </div>
                         </div>
                     </div>                     
                 </div>
@@ -656,13 +661,17 @@
                 $('#clinic2').css({"display":"block"});
                 $('#clinic3').css({"display":"block"});
 });
+    document.getElementById("li_before_and_after").addEventListener("click",function(e) {
+                $('#img_before_and_after').css({"display":"block"});
+});
+
     $(document).ready(function(){
         console.log("hi");
                 $('#li_service').addClass('active');
                 $('#clinic1').css({"display":"none"});
                 $('#clinic2').css({"display":"none"});
                 $('#clinic3').css({"display":"none"});
-
+                $('#img_before_and_after').css({"display":"none"});
     });
 </script>
 
