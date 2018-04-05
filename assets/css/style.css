@@ -790,8 +790,8 @@ h1 span {
     margin-bottom:20px;
 }
 .single_mixi_portfolio img{
-    width:100%;
-    height:400px;
+    width:60%;
+    height:250px;
 }
 .single_mixi_portfolio:hover .mixi_portfolio_overlay{
     opacity:1;
