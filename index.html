@@ -122,15 +122,15 @@
                 <div class="row">
                     <div class="main_mix_content text-center sections">
                         <div class="main_mix_menu">
-                            <ul>
-                                <li class="filter selected" data-filter=".services">Services</li>
-                                <li class="filter" data-filter=".cat1">Our Clinic</li>
+                            <ul>                                         
+                                <li id="li_service" class="filter" data-filter=".services">Services</li>
+                                <li id="li_clinic" class="filter" data-filter=".clinic">Our Clinic</li>
                                 <li class="filter" data-filter=".cat2">Education</li>
                                 <li class="filter" data-filter=".cat3">Before and After</li>
                             </ul>
                         </div>
                         <div id="mixcontent" class="mixcontent">
-                            <div class="col-sm-4 mix services">
+                            <div  class="col-sm-4 mix services">
                                 <div class="single_mixi_portfolio">
                                     <img src="assets/images/pf1.png" alt="" />
                                     <div class="mixi_portfolio_overlay">
@@ -229,7 +229,40 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>                                                                        
+                            </div>   
+                            <div class="col-sm-4 mix clinic ">
+                                <div id="clinic1" class="single_mixi_portfolio">
+                                    <img src="assets/images/clinic1.jpeg" alt="" />
+                                    <div class="mixi_portfolio_overlay">
+                                        <div class="overflow_hover_text">
+                                            <p>TMJ</p>
+                                            <div class="separator2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="col-sm-4 mix clinic">
+                                <div id="clinic2" class="single_mixi_portfolio">
+                                    <img src="assets/images/clinic2.jpeg" alt="" />
+                                    <div class="mixi_portfolio_overlay">
+                                        <div class="overflow_hover_text">
+                                            <p>Full Mouth Rehabiliation</p>
+                                            <div class="separator2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                        
+                            <div  class="col-sm-4 mix clinic">
+                                <div id="clinic3" class="single_mixi_portfolio">
+                                    <img src="assets/images/clinic3.jpeg" alt="" />
+                                    <div class="mixi_portfolio_overlay">
+                                        <div class="overflow_hover_text">
+                                            <p>Cosmetic Dentistry</p>
+                                            <div class="separator2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                                                                                                    
 
                         </div>
                     </div>                     
@@ -616,6 +649,20 @@
 
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+<script type="text/javascript">
+    document.getElementById("li_clinic").addEventListener("click",function(e) {
+                $('#clinic1').css({"display":"block"});
+                $('#clinic2').css({"display":"block"});
+                $('#clinic3').css({"display":"block"});
+});
+    $(document).ready(function(){
+        console.log("hi");
+                $('#li_service').addClass('active');
+                $('#clinic1').css({"display":"none"});
+                $('#clinic2').css({"display":"none"});
+                $('#clinic3').css({"display":"none"});
 
+    });
+</script>
     </body>
 </html>
