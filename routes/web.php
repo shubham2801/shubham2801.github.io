@@ -1,6 +1,8 @@
 <?php
 
-
+View::addExtension('html', 'php');
 Route::get('/', function () {
-    return view('index');
+    
+    
+    return View::make('index');
 });
