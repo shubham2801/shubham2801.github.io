@@ -801,7 +801,7 @@ h1 span {
     width:60%;
     height:200px;
 }
-.single_mixi_portfolio .mixi_portfolio_overlay{
+.single_mixi_portfolio:hover .mixi_portfolio_overlay{
     opacity:1;
 }
 .mixi_portfolio_overlay {
@@ -813,7 +813,7 @@ h1 span {
     height: 100%;
     transition: .5s;
     opacity: 0;
-    border: 4px solid #000000;
+    border: 10px solid #000000;
 }
 .mixi_portfolio_overlay .overflow_hover_text{
     position: absolute;
