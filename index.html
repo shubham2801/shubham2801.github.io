@@ -79,9 +79,9 @@
                             </h3>   
                         </div>
                         <div align="right" class="col-md-6 col-sm-7 col-xs-7 wow fadeInUp" data-wow-duration="700ms">
-                            <h3>        
+                            <h3 >        
                                 <span class="glyphicon glyphicon-envelope" style="color:#ffffff;  vertical-align: middle;" aria-hidden="true"></span>     
-                                <a class="phone" href="#contact">Book an Appointment</a>       
+                                <a id="book_appointment_link" class="phone" href="#contact">Book an Appointment</a>       
                             </h3>   
                         </div>                                                            
                     </div>
@@ -711,7 +711,7 @@
                             </div>
 
                             <div class="col-sm-8  no-padding">
-                                <div class="single_contant_left wow fadeInRight">
+                                <div id="book_appointment_form" class="single_contant_left wow fadeInRight">
                                     <form action="#" id="formid">
                                         <div class="row">
                                             <div class="col-sm-6">
@@ -802,6 +802,13 @@
     });
     $('.mixi_portfolio_overlay').hover(function(){
         $(this).css("cursor","pointer");
+    });
+    $('#book_appointment_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#book_appointment_form").offset().top
+        }, 1000);
+
     });
     $('.mixi_portfolio_overlay').click(function(){
         $('.services_info').css({"display":"none"});      
