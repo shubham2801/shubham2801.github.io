@@ -104,23 +104,12 @@
             </div>
         </section>
 
-<!--
-        <section id="creativity" class="creativity wow fadeIn">
-            <div class="creativity_overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_creativity text-center">
-                            <a href="" class="btn btn-larg">Pure Creativity.</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    -->
+
+    
         <section id="portfolio" class="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="main_mix_content text-center sections">
+                    <div class="main_mix_content text-center without_bottom_padding_sections">
                         <div class="main_mix_menu">
                             <ul>                                         
                                 <li id="li_service" class="filter" data-filter=".services">Services</li>
@@ -129,6 +118,28 @@
                                 <li id="li_before_and_after" class="filter" data-filter=".before_and_after">Before and After</li>
                             </ul>
                         </div>
+
+        <section id="id_rct_info" class="rct_info">
+            <div class="container">
+                <div class="row">
+                    <div class="without_top_padding_sections">
+                        <button align="right" id="close_info" type="button" class="close btn-lg " aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>                        
+                        <div class="head_title text-center">
+                            <h2>Root Canal Treatment</h2>
+                            <div class="separator"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+                        <div id="gayab">            
                         <div id="mixcontent" class="mixcontent">
                             <div  class="col-sm-4 mix services">
                                 <div class="single_mixi_portfolio">
@@ -252,26 +263,23 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>                     
                 </div>
             </div>
         </section> <!-- End of portfolio two Section -->   
 
 
-<!--
-        <section id="heretohelp" class="heretohelp">
-            <div class="creativity_overlay">
-                <div class="container">
-                    <div class="row">
-                        <div class="main_creativity main_heretohelp text-center">
-                            <a href="" class="btn btn-larg">We’re here to help.</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
--->
+
+
+
+
+
+
+
+
+
 
         <section id="clients" class="client">
             <div class="container">
@@ -638,18 +646,31 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 <script type="text/javascript">
-    document.getElementById("li_clinic").addEventListener("click",function(e) {
-                $('#clinic1').css({"display":"block"});
-                $('#clinic2').css({"display":"block"});
-                $('#clinic3').css({"display":"block"});
+document.getElementById("li_clinic").addEventListener("click",function(e) {
+            $('#clinic1').css({"display":"block"});
+            $('#clinic2').css({"display":"block"});
+            $('#clinic3').css({"display":"block"});
 });
-    document.getElementById("li_before_and_after").addEventListener("click",function(e) {
-                $('#img_before_and_after').css({"display":"block"});
+document.getElementById("li_before_and_after").addEventListener("click",function(e) {
+            $('#img_before_and_after').css({"display":"block"});
 });
 
+$('.mixi_portfolio_overlay').click(function(){
+    $('#id_rct_info').css({"display":"block"});          
+    $('html, body').animate({
+        scrollTop: $("#id_rct_info").offset().top
+    }, 1000);
+
+});
+
+$('#close_info').click(function(){
+   $('#id_rct_info').slideUp();               
+});
     $(document).ready(function(){
-        console.log("hi");
+                        
+
                 $('#li_service').addClass('active');
+                $('#id_rct_info').css({"display":"none"});      
                 $('#clinic1').css({"display":"none"});
                 $('#clinic2').css({"display":"none"});
                 $('#clinic3').css({"display":"none"});
