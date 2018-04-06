@@ -85,8 +85,8 @@
                             </h3>   
                         </div>                                                            
                     </div>
-				
-				</div>
+                
+                </div>
             </div>
         </section>
 
@@ -133,7 +133,7 @@
                             <div  class="col-sm-4 mix services">
                                 <div class="single_mixi_portfolio">
                                     <img src="assets/images/rct.jpg" alt="" />
-                                    <div class="mixi_portfolio_overlay">
+                                    <div id="rct" class="mixi_portfolio_overlay">
                                         <div class="overflow_hover_text">
                                             <p>Root Canal Treatment</p>
                                             <div class="separator2"></div>
