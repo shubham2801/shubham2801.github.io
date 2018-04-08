@@ -21,6 +21,11 @@ body {
     font-weight: 300;
 }
 
+ul li{
+     margin-top: 1.5rem;
+}
+
+
 a.phone { font-family: 'ambleregular'; color: white; text-transform: none;   }
 .all_overlay{
     background: rgba(219, 116, 117, 0.75); /* Old browsers */
@@ -370,6 +375,13 @@ Separator
     margin: 50px auto 40px auto;
     background: #ffffff;
 }
+.separator5 {
+    height: 2px;
+    width: 100px;
+    margin:20px auto;
+    background: #d87843;
+}
+
 .separator2 {
     height: 2px;
     width: 50px;
@@ -880,11 +892,15 @@ h1 span {
     background: #f4f4f4;
 }
 .client .single_client_logo{
+
     margin-bottom:20px;
     padding: 5px;
     overflow: hidden;
 }
-
+a.disable {
+  pointer-events: none;
+  cursor: default;
+}
 .client .single_client_logo a img{
     width: 100%;
     float: left;
