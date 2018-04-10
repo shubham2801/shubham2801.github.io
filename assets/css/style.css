@@ -193,7 +193,7 @@ h1 {
     font-size: 3rem;
     line-height: 4rem;
     color:#fff;
-    font-family: '';
+    font-family: 'OpenSans';
 }
 h2 {
     font-size:1.875rem;
@@ -1076,7 +1076,7 @@ color:white;
 
 
 .navbar-default {
-     background: rgba(219, 116, 117, 0.75); /* Old browsers */
+    background: rgba(219, 116, 117, 0.75); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(0, 0, 0, 0.6) 0%,
         rgba(0, 0, 0, 0.6) 24%,
         rgba(0, 0, 0, 0.6) 42%,
