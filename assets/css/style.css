@@ -193,7 +193,7 @@ h1 {
     font-size: 3rem;
     line-height: 4rem;
     color:#fff;
-    font-family: 'OpenSans';
+    font-family: '-webkit-body';
 }
 h2 {
     font-size:1.875rem;
