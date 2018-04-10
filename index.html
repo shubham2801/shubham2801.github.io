@@ -33,7 +33,7 @@
 
         <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body data-spy="scroll" data-target=".navbar-collapse">
+    <body id="body_top">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -52,7 +52,7 @@
 -->
 
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav id="navbar_list" class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -65,15 +65,15 @@
                     </button>
 -->
                 </div>
-                <div id="navbar" class="">
+                <div id="navbar" class="navbar-collapse collapse custom_background">
                     <ul class="nav navbar-nav navbar-right">
-                        <li id="" class="active"><a href="/">Home</a></li> 
-                        <li id=""><a style="color:white;" href="">Features</a></li>
-                        <li id=""><a style="color:white;" href="">Pricing</a></li>
-                        <li id=""><a style="color:white;" href="">Online Academy</a></li>
-                        <li id=""><a style="color:white;" href="">About</a></li>
-                        <li id=""><a style="color:white;" href="">Blogs</a></li>
-                        <li><a style="color:white;" href="">Login</a></li>
+                        <li  id="home_link" class="active"><a style="color:white;" href="#">Home</a></li> 
+                        <li id="our_mission_link"><a style="color:white;" href="#">Our Mission</a></li>
+                        <li id="services_link"><a style="color:white;" href="#">Services</a></li>
+                        <li id="testimonials_link"><a style="color:white;" href="#">Testimonials</a></li>
+                        <li id="about_us_link"><a style="color:white;" href="#">About Us</a></li>
+                        <li id="why_chose_us_link"><a style="color:white;" href="#">Why to chose us?</a></li>
+                        <li id="get_in_touch_link"><a style="color:white;" href="#">Get in Touch</a></li>
                     </ul>
                 </div>  
             </div>
@@ -482,7 +482,7 @@
                                             <a href="#" class="disable">
                                               <span class="glyphicon glyphicon-ok"></span>
                                             </a> &nbsp;
-                                            Avoid Tobacco and its products,it will save you from oral cancer and countless ill effects caused by the agents used to mask the smell of tobacco    
+                                            Avoid Tobacco and its products,it will save you from oral cancer and periodontal complications
                                         </li>   
                                      </ul> 
                                   </div>          
@@ -1143,6 +1143,60 @@
     $('.mixi_portfolio_overlay').hover(function(){
         $(this).css("cursor","pointer");
     });
+    $('#home_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#body_top").offset().top
+        }, 1000);
+
+    });
+    $('#our_mission_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#introduction").offset().top
+        }, 1000);
+
+    });
+
+    $('#services_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top
+        }, 1000);
+
+    });
+    $('#testimonials_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#clients").offset().top
+        }, 1000);
+
+    });
+
+
+    $('#about_us_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#team").offset().top
+        }, 1000);
+
+    });
+    $('#why_chose_us_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#choose").offset().top
+        }, 1000);
+
+    });
+    $('#get_in_touch_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top
+        }, 1000);
+
+    });
+
+
     $('#book_appointment_link').click(function(e){
         e.preventDefault();
         $('html, body').animate({
@@ -1241,6 +1295,20 @@ function myNavFunc(){
     else
          window.open("http://maps.google.com/maps?daddr=28.568968, 77.357134&amp;ll=");
 }
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 10) {
+        //clearHeader, not clearheader - caps H
+        $("#navbar_list").removeClass("small");
+    }
+}); //missing 
+
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
 
 </script>
 
