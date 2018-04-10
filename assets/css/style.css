@@ -17,7 +17,7 @@ body {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'ambleregular';
+    font-family: 'robotoregular';
     font-weight: 300;
 }
 
@@ -120,7 +120,7 @@ p {
 
 }
 a{
-    font-family: 'robotoregular';
+    font-family: 'amblelight';
 }
 .clear {
     clear: both;
@@ -1076,7 +1076,7 @@ color:white;
 
 
 .navbar-default {
-    background: rgba(219, 116, 117, 0.75); /* Old browsers */
+     background: rgba(219, 116, 117, 0.75); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(0, 0, 0, 0.6) 0%,
         rgba(0, 0, 0, 0.6) 24%,
         rgba(0, 0, 0, 0.6) 42%,
