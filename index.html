@@ -64,7 +64,7 @@
                     </button>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse custom_background">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-center">
                         <li  id="home_link" class="active"><a style="color:white;" href="#">Home</a></li> 
                         <li id="our_mission_link"><a style="color:white;" href="#">Our Mission</a></li>
                         <li id="services_link"><a style="color:white;" href="#">Services</a></li>
@@ -143,7 +143,7 @@
 
                             <ul>                                         
                                 <li id="li_service" class="filter" data-filter=".services">Services</li>
-                                <li id="li_clinic" class="filter" data-filter=".clinic">Our Clinic</li>
+                               <li id="li_clinic" class="filter"  data-filter=".clinic">Our Clinic</li>
                                 <li id="li_education" class="filter" data-filter=".education">Education</li>
                                 <li id="li_before_and_after" class="filter" data-filter=".before_and_after">Before and After</li>
                             </ul>
@@ -1118,15 +1118,28 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 <script type="text/javascript">
- 
+    function hide_service_info(){
+        $("#id_rct_info").css({"display":"none"});
+        $("#id_dental_implant_info").css({"display":"none"});
+        $("#id_tooth_extraction_info").css({"display":"none"});
+        $("#id_dental_crown_info").css({"display":"none"});
+        $("#id_braces_info").css({"display":"none"});
+        $("#id_tmj_info").css({"display":"none"});
+        $("#id_kids_dentistry_info").css({"display":"none"});
+        $("#id_cosmetic_dentistry_info").css({"display":"none"});
+        $("#id_full_mouth_rehabiliation_info").css({"display":"none"});
+
+    }
 
     document.getElementById("li_clinic").addEventListener("click",function(e) {
+                hide_service_info();
                 $('#clinic1').css({"display":"block"});
                 $('#clinic2').css({"display":"block"});
                 $('#clinic3').css({"display":"block"});
 
     });
     document.getElementById("li_education").addEventListener("click",function(e) {
+                hide_service_info();
                 $('#education1').css({"display":"block"});
                 $('#education2').css({"display":"block"});
                 $('#education3').css({"display":"block"});
@@ -1136,6 +1149,7 @@
 
 
     document.getElementById("li_before_and_after").addEventListener("click",function(e) {
+                hide_service_info();
                 $('#img_before_and_after').css({"display":"block"});
     });
     $('.mixi_portfolio_overlay').hover(function(){

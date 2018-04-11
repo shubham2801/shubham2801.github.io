@@ -26,7 +26,7 @@ ul li{
 }
 
 
-a.phone { font-family: 'ambleregular'; color: white; text-transform: none;   }
+a.phone { font-family: 'amblelight'; color: white; text-transform: none;   }
 .all_overlay{
     background: rgba(219, 116, 117, 0.75); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(0, 0, 0, 0.6) 0%,
@@ -115,6 +115,13 @@ a span {
     box-sizing: border-box;
     /*    direction: rtl;*/
 }
+
+  .navbar-nav.navbar-center {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
 p {
     margin: 0 0 15px;
 
@@ -190,10 +197,10 @@ h5 {
     line-height: 2rem;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 4rem;
     color:#fff;
-    font-family: 'robotoregular';
+    font-family: 'amblelight';
 }
 h2 {
     font-size:1.875rem;
@@ -701,7 +708,7 @@ h1 span {
 .home .main_home p.subtitle{
     color: #fff;
     padding-bottom: 25px;
-    font-family: 'ambleregular';
+    font-family: 'amblelight';
     font-size:1.375rem;
     max-width:65%;
     margin:0 auto;
