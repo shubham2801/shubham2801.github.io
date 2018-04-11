@@ -17,7 +17,7 @@ body {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'robotoregular';
+    font-family: 'amblelight';
     font-weight: 300;
 }
 
@@ -232,6 +232,8 @@ h5 {
     color:#222222;
 }
 h6 {
+    padding-top: 2rem;
+    color:#000000;
     font-size: 1rem;
     margin-bottom: .9rem;
 }
@@ -831,7 +833,7 @@ h1 span {
     height: 100%;
     transition: .5s;
     opacity: 0;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
 }
 .mixi_portfolio_overlay .overflow_hover_text{
     position: absolute;
