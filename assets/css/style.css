@@ -116,11 +116,14 @@ a span {
     /*    direction: rtl;*/
 }
 
+@media(min-width: 768px)
+{
   .navbar-nav.navbar-center {
     position: relative;
     left: 50%;
     transform: translatex(-50%);
-  }
+  }    
+}
 
 p {
     margin: 0 0 15px;
