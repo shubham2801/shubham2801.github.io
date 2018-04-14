@@ -807,8 +807,21 @@ h1 span {
 .main_mix_menu{
     margin-bottom:50px;
 }
+
+@media(min-width: 768px)
+{
+    .main_mix_menu ul li{    
+        width: 250px;        
+    }
+}
+@media(max-width: 767px)
+{
+    .main_mix_menu ul li{    
+        width: 150px;        
+    }
+}
+
 .main_mix_menu ul li{
-    width:250px;
     height:35px;
     padding: .2rem;
     display: inline-block;
