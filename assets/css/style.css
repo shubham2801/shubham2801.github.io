@@ -711,8 +711,20 @@ h1 span {
 
 
 /*home section*/
+@media(min-width: 768px)
+{
 .home{
-    background: url(../images/homebg.jpg) no-repeat 100% 100%;
+        background: url(../images/homebg.jpg) no-repeat 100% 100%;
+    }    
+}
+@media(max-width: 767px)
+{
+.home{
+        background: url(../images/homebg2.jpg) no-repeat 100% 100%;
+    }    
+}
+
+.home{
     background-size: cover;
     position: relative;
     width: 100%;
