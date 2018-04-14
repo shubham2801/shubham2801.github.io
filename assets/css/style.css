@@ -860,7 +860,9 @@ h1 span {
 @media(max-width: 768px)
 {
     .single_mixi_portfolio img{
-        width:100%;
+        position: relative;
+        left: -0.3rem;         
+        width:80%;
         height:100px;
     }
 }
