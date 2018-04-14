@@ -887,7 +887,7 @@ h1 span {
 @media(max-width: 767px)
 {
     .mixi_portfolio_overlay{
-    left: 3rem;
+    left: 2rem;
 
         width:80%;
     }
