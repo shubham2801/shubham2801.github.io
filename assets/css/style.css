@@ -877,9 +877,8 @@ h1 span {
 @media(min-width: 768px)
 {
 
-    .mixi_portfolio_overlay{
-    left: 0;
-
+    .mixi_portfolio_overlay{    
+        left: 0;
         width:100%;
     }    
 }
@@ -887,8 +886,7 @@ h1 span {
 @media(max-width: 767px)
 {
     .mixi_portfolio_overlay{
-    left: 2rem;
-
+        left: 2rem;
         width:80%;
     }
 }
