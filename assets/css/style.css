@@ -860,7 +860,7 @@ h1 span {
 @media(max-width: 768px)
 {
     .single_mixi_portfolio img{
-        width:100%;
+        width:80%;
         height:100px;
     }
 }
@@ -884,7 +884,8 @@ h1 span {
 @media(max-width: 767px)
 {
     .mixi_portfolio_overlay{
-        width:100%;
+        left: 10%;
+        width:80%;
     }
 }
 
@@ -901,8 +902,7 @@ h1 span {
 .mixi_portfolio_overlay .overflow_hover_text{
     position: absolute;
     top: 40%;
-    left: 13%;
-    width: 75%;
+    width: 100%;
 }
 .mixi_portfolio_overlay .overflow_hover_text i{
     color:#223d61;
@@ -1121,6 +1121,7 @@ a.disable {
 .contact{
     background: #fff;
 }
+
 
 .contact .main_contact_text_area{
     background-color:#e4e4e4;
