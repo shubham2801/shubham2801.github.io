@@ -20,7 +20,9 @@ body {
     font-family: 'amblelight';
     font-weight: 300;
 }
-
+div.maps{
+    width:23rem;height:23rem;background:transparent;
+}
 ul li{
      margin-top: 1.5rem;
 }
@@ -1079,7 +1081,7 @@ a.disable {
 }
 .contact .single_message_right_info{
     background: #f2f2f2;
-    padding: 120px 80px;
+    padding: 120px 30px;
 }
 .contact .single_message_right_info ul li a{
     font-style: italic;
