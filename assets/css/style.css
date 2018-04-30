@@ -838,7 +838,12 @@ h1 span {
 .single_mixi_portfolio{
     position:relative;
     float: left;
-    width:100%;
+    margin-bottom:20px;
+}
+.single_mixi_portfolio_clinic{
+    position:relative;
+    float: left;
+    width: 90%;
     margin-bottom:20px;
 }
 .comingsoon img{
