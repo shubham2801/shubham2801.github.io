@@ -74,6 +74,7 @@
                         <li id="about_us_link"><a style="color:white;" href="#">Meet the Doctors</a></li>
                         <li id="why_chose_us_link"><a style="color:white;" href="#">Why choose us?</a></li>
                         <li id="get_in_touch_link"><a style="color:white;" href="#">Get in Touch</a></li>
+                        <li id="blogs_link"><a style="color:white;" href="#">Blogs</a></li>
                     </ul>
                 </div>  
             </div>
@@ -136,7 +137,6 @@
             </div>
         </section>
 
-
     
         <section style="padding-bottom: 7rem;" id="portfolio" class="portfolio">
             <div class="container">
@@ -144,7 +144,7 @@
                     <div class="main_mix_content text-center without_bottom_padding_sections">
                         <div class="main_mix_menu">
                             <ul>                                 
-                                <li id="li_service" class="filter" data-filter=".services">Services</li>
+                                <li id="li_service" class="filter" data-filter=".services">services</li>
                                <li id="li_clinic" class="filter"  data-filter=".clinic">Our Clinic</li>
                                 <li id="li_education" class="filter" data-filter=".education">Education</li>
                                 <li id="li_before_and_after" class="filter" data-filter=".before_and_after">Before and After</li>
@@ -897,6 +897,43 @@
 
 
 
+        <section id="blog_main_page" class="introduction">
+            <div class="container">
+                <div class="row">
+                    <div class="main_introduction mission_sections">
+                        <div class="head_title wow fadeInUp" data-wow-duration="700ms">
+                            <div class="text-center">    
+                                <h2>Blog</h2>
+                                <div class="separator"></div>
+                            </div>
+                            <div class="col-sm-4 mix">
+                            	<div>
+                                	<div id="clinic1" class="single_mixi_portfolio single_mixi_portfolio_clinic">
+                                    	<img src="assets/images/diabetic_patient_blog.png" alt="" />
+                                	</div>
+                            	</div>
+							<div class="head_title text-left">
+                                <h5><b>DOES SINGLE SITTING ROOT CANAL TREATMENT HELP YOU TO CONTROL YOUR DIABETES?<b></h5>
+                                <div class="bigSeparator"></div>
+                                <div>
+                                	Unawareness about the importance of oral health and ignorance of dental health  issues which, if not taken care of, gradually lead to serious morbidity affecting the whole body...
+                                </div>
+                                <br/>
+
+                                <div>
+	                               <a style=" padding: 0;border: 0;" class="btn btn-md" title="Tips for diabetic patient." href="tips-for-diabetic-patient.html">Read more</a>
+                                </div>
+                            </div>                                
+                            </div>
+                            <div class="col-sm-4 mix">
+                            </div>                            
+							<div class="col-sm-4 mix">
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -1401,6 +1438,14 @@
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
+        }, 1000);
+
+    });
+
+    $('#blogs_link').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#blog_main_page").offset().top
         }, 1000);
 
     });
