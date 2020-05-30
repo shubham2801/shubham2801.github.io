@@ -351,7 +351,11 @@ ul{
 .heading {
     margin-bottom: 4rem;
 }
-.appointment_footer{   
+.blog_appointment_footer{
+    padding-top: 1rem;
+}
+
+.appointment_footer{
     padding-top: 10rem;
 }
 .overlay {
@@ -405,6 +409,13 @@ Separator
     height: 2px;
     width: 100px;
     margin:20px auto;
+    background: #d87843;
+}
+
+.bigSeparator {
+    height: 2px;
+    width: 15rem;
+    margin: 30px auto;
     background: #d87843;
 }
 
@@ -724,12 +735,50 @@ h1 span {
     }    
 }
 
+@media(min-width: 768px)
+{
+    .blog_home{
+        background: url(../images/videobg.jpg) no-repeat 100% 100%;
+    }
+}
+@media(max-width: 767px)
+{
+    .blog_home{
+        background: url(../images/videobg.jpg) no-repeat 100% 100%;
+    }
+}
+
+.blog_home{
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+
 .home{
     background-size: cover;
     position: relative;
     width: 100%;
     height:100%;
 }
+
+.blog_home .main_home{
+    padding-top: 1rem;
+}
+
+.blog_home .main_home h1{
+    color: #fff;
+}
+.blog_home .main_home p.subtitle{
+    color: #fff;
+    padding-bottom: 25px;
+    font-family: 'amblelight';
+    font-size:1.375rem;
+    max-width:65%;
+    margin:0 auto;
+    line-height: 2rem;
+}
+
 
 .home .main_home{
     padding-top: 10rem;
