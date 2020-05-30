@@ -414,8 +414,8 @@ Separator
 
 .bigSeparator {
     height: 2px;
-    width: 15rem;
-    margin: 30px auto;
+    width: 8rem;
+    margin-left: 6.2rem;
     background: #d87843;
 }
 
