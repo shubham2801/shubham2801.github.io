@@ -1025,16 +1025,10 @@ a.disable {
     width: 100%;
     float: left;
     padding: 1px;
-    opacity: 0.5;
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter ….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-    filter: gray;
-    -webkit-filter: grayscale(100%);
-    transition: all 0.6s;
 }
 .client .single_client_logo a:hover img{
     opacity: 1;
     filter:none;
-    -webkit-filter: grayscale(0%);
 }
 
 /*team section css*/
